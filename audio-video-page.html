@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio/Video</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>How to implement audio and video in a html page</h1>
+    <div class="audio-wrapper">
+      <div class="audiovideo1">
+        <p>
+          Hi! look at this amazing video about Norway made by <a href="https://www.youtube.com/c/RyanShirley" target="_blank">Ryan Shirley</a></p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TuOIW144_BY"
+          >
+            title="YouTube video player"
+          </iframe>
+        </p>
+      </div>
+
+      <div class="audiovideo2">
+        <video width="480" height="360" controls autoplay muted loop>
+          <source src="Ice skating.mp4" type="video/mp4" />
+          <source src="Ice skating.ogg" type="video/ogg" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="audiovideo3">
+        <p>You want to hear som music?</p>
+        <audio controls autoplay>
+          <source src="introsound.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audiovideo4">
+        <p>Or maybe this instead</p>
+        <audio controls>
+          <source src="test.ogg" type="audio/ogg" />
+          <source src="summersound.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <br />
+    <a href="html-forms.html"><button>Forms</button></a>
+  </footer>
+</html>

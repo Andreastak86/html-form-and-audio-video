@@ -1,0 +1,96 @@
+/* elements*/
+
+body {
+  margin: 0;
+  background-color: #d4eac8;
+  color: #484538;
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  cursor: grabbing;
+  text-align: center;
+  color: #ffca3a;
+  background-color: #ff595e;
+  border-radius: 60px;
+  box-shadow: 0 4px #ffca3a;
+  display: block;
+}
+
+legend {
+  display: block;
+  background-color: #6a4c93;
+  color: #ff595e;
+  padding: 2px 4px;
+}
+
+button:hover {
+  background-color: #6a4c93;
+}
+
+button:active {
+  background-color: #6a4c93;
+  box-shadow: 0 5px #ffca3a;
+  transform: translateY(4px);
+
+  /* Class*/
+}
+.color-pick {
+  color: #484538;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 200;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-choose {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub-btn {
+  margin: 20px 10px;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+}
+
+.questions {
+  color: #2a271d;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.audio-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider {
+  color: #2a271d;
+  font-size: 25px;
+}
+
+/* IDs*/

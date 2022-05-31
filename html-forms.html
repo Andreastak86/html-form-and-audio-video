@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task about forms</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header>Task about FORMS</header>
+  <div>
+    <h1>Forms in html</h1>
+    <div class="main">
+      <div class="questions">
+        <p>First thing first, tell me your name:-)</p>
+        <form>
+          <label for="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" placeholder="Ola / Kari" /><br />
+          <label for="lname">Last name:</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Nordmann"
+          /><br /><br />
+          <input class="sub-btn" type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="questions">
+        <p>Which of these colors are you today?</p>
+        <form>
+          <label for="Red">Red:</label>
+          <input type="radio" id="Red" name="Pick" value="" />
+          <label for="Blue">Blue:</label>
+          <input type="radio" id="Blue" name="Pick" value="" />
+          <label for="Green">Green:</label>
+          <input type="radio" id="Green" name="Pick" value="" />
+          <label for="Orange">Orange:</label>
+          <input type="radio" id="Orange" name="Pick" value="" />
+          <label for="Pink">Pink:</label>
+          <input type="radio" id="Pink" name="Pick" value="" />
+          <label for="Yellow">Yellow:</label>
+          <input type="radio" id="Yellow" name="Pick" value="" /><br />
+          <br />
+        </div>
+          <label class="color-pick" for="favcolor">
+              <p class="col-choose"><em>Maybe non of these? choose yours</em></p>
+              </label>
+            <input
+              type="color"
+              id="mycolor"
+              name="mycolor"
+              value="#6A4C93"
+            /><br />
+          <input class="sub-btn" type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="questions">
+        <p>How did you get to the work today?</p>
+        <form>
+          <label for="transport1"> I use my legs</label>
+          <input
+            type="checkbox"
+            id="transport1"
+            name="transport1"
+            value="By Foot"
+          />
+          <label for="transport2"> I took the bus!</label>
+          <input
+            type="checkbox"
+            id="transport2"
+            name="transport2"
+            value="Buss"
+          />
+          <label for="transport3"> I use my car</label>
+          <input
+            type="checkbox"
+            id="transport3"
+            name="transport3"
+            value="Car"
+          />
+          <label for="transport4"> In my private Jet of course!</label>
+          <input
+            type="checkbox"
+            id="transport4"
+            name="transport4"
+            value="Private Jet"
+          /><br />
+          <input class="sub-btn" type="submit" value="Submit" /> <br />
+        </form>
+      </div>
+      <div class="questions">
+        <p>
+          Okay, I want to know you a little better, please type in date of
+          birth!
+        </p>
+        <form>
+          <label for="b-day"></label>
+          <input
+            type="date"
+            id="b-day"
+            name="b-day"
+            max="2010-12-31"
+            min="1960-12-31"
+          />
+          <input class="sub-btn" type="submit" value="Jup! thats my b-day" />
+        </form>
+      </div>
+      <br />
+      <div class="questions">
+        <form>
+          <label for="food">Your favorite food?:</label>
+          <select id="food" name="food">
+            <option value="sushi">Sushi</option>
+            <option value="pizza">Pizza</option>
+            <option value="hamburger">Hamburger</option>
+            <option value="soup">Soup</option>
+            <option value="beef">Beef</option>
+            <option value="fish">Fish</option>
+            <option value="nothing">I don't like anything</option>
+          </select>
+          <input class="sub-btn" type="submit" value="Thats my favorite" />
+        </form>
+      </div>
+      <div class="questions">
+        <p>Why don't you tell me your best joke?</p>
+        <form>
+          <textarea name="message" rows="8" cols="18"></textarea>
+          <br /><br />
+          <input class="sub-btn" type="submit" value="Send away" />
+        </form>
+      </div>
+      <div class="questions">
+        <p>Whats your favorite country and city?</p>
+        <form>
+          <fieldset>
+            <legend>Favorite place on earth:</legend>
+            <label for="city">My favorite city:</label><br />
+            <input type="text" id="city" name="city" value="Bergen" /><br />
+            <label for="country">My favorite country:</label><br />
+            <input
+              type="text"
+              id="country"
+              name="country"
+              value="Norway"
+            /><br /><br />
+            <input class="sub-btn" type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+      <div class="questions">
+        <p>You prefer?</p>
+        <form>
+          <input list="hobbies" name="hobbies" />
+          <datalist id="hobbies">
+            <option value="Read books"></option>
+            <option value="Watch movies"></option>
+            <option value="Listen to music"></option>
+            <option value="Go for a walk in the park"></option>
+            <option value="Go fishing"></option>
+          </datalist>
+
+          <input class="sub-btn" type="submit" />
+        </form>
+      </div>
+      <div class="questions">
+        <p>Mabye you want to join my newsletter?</p>
+        <form>
+          <label for="email">Enter eMail:</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <br />
+          <label for="pwd">Enter Password:</label><br />
+          <input type="password" id="pwd" name="pwd" /> <br />
+          <input class="sub-btn" type="submit" value="I wanna Join!" />
+        </form>
+      </div>
+      <div class="questions">
+        <p>Why don't you upload a picture of your self?</p>
+        <form>
+          <label for="myfile">Pick a picture!:</label>
+          <input type="file" id="myfile" name="myfile" />
+        </form>
+      </div>
+      <br>
+      <br />
+      <form>
+        <p class="slider">From zero to 60. How happy are you right now?</p>
+        <input type="range" id="zero-to-sixty" name="zero-to-sixty" min="0" max="60">
+        <input class="sub-btn" type="submit" value="Submit">
+      </form>
+  </div>
+  <br>
+  </body>
+  <footer>
+    <a href="audio-video-page.html"><button>About Audio/Video</button></a>
+  </footer>
+</html>
